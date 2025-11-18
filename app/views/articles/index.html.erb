@@ -1,0 +1,12 @@
+<ul class="container">
+  <% @articles.each do |article| %>
+  <div class="article">
+    <%= link_to article.title, article_path(article), class: "article-title" %>
+    <% if article.content.split(' ').length > 8 %>
+      <p><%= article.content.split(' ')[0,10].join(' ')+"..." %></p>
+    <% else %>
+      <p><%= article.content%></p>
+    <% end %>
+  </div>
+  <% end %>
+</ul>

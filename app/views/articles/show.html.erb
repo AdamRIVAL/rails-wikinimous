@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="button-container">
+    <%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "button delete"%>
+
+    <%= link_to "Edit this article", edit_article_path, class: "button" %>
+  </div>
+  <br>
+  <div class="article">
+    <h2 class="article-title"><%= @article.title %></h2>
+    <p><%= @article.content %></p>
+  </div>
+  <div class="button-container">
+    <%= link_to "Back to list", articles_path, class: "button" %>
+  </div>
+</div>
