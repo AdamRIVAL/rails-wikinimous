@@ -13,7 +13,9 @@
  *= require_tree .
  *= require_self
  */
-
+body {
+  font-family: "Roboto Slab";
+}
 .banner {
   width: 100%;
   background-color: rgb(236, 236, 236);
@@ -21,14 +23,12 @@
   padding-top: 5px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  font-family: "Roboto Slab";
 }
 
 .article-title {
   font-size: 30px;
   color: rgb(0, 140, 255);
   text-decoration: none;
-  font-family: "Roboto Slab";
 }
 
 
@@ -37,14 +37,12 @@
   align-self: center;
   background-color: white;
   padding: 10px;
-  font-family: "Roboto Slab";
 }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Roboto Slab";
 }
 
 .button {
@@ -56,7 +54,6 @@
   padding: 5px;
   width: 150px;
   text-align: center;
-  font-family: "Roboto Slab";
 }
 
 .delete {
@@ -74,5 +71,4 @@
   flex-direction: column;
   padding: 10px;
   width: 300px;
-  font-family: "Roboto Slab";
 }
